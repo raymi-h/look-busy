@@ -1,0 +1,48 @@
+#! /usr/bin/env python2
+
+import time, random
+
+messages = [
+    'generating entropy',
+    'killing time',
+    'twiddling thumbs',
+    'dotting the \'I\'s',
+    'crossing the \'T\'s',
+    'counting to one-hundred',
+    'holding breath',
+    'herding cats',
+    'picking up sticks',
+    'counting sheep',
+    'looking busy',
+    'YELLING!',
+    'rAndOMlY capITAliziNg',
+    'calling technical support',
+    'notifying field agents',
+    'spinning HHD',
+    'moving on with life',
+    'taking a smoke break',
+    'ringing doorbell',
+    'following the white rabbit',
+    'taking the red pill',
+    'breaking things',
+    'looking good',
+    'making the magic happen',
+    'preparing next loading hint',
+    '[ YOUR AD HERE ]',
+    'bringing all the boys to the yard',
+    'pondering the meaning of life',
+    'summoning Exodia',
+    'charging spirit bomb',
+    'constructing pillow fort'
+]
+
+counter = 0
+
+message = random.choice( messages )
+
+print message + ' ' + str( counter ) + '%'
+
+while counter < 100:
+    time.sleep(random.random() / 4)
+    counter += 1
+    print "\b\r" + message + ' ' + str( counter ) + '%\t\t\t\t\t'
